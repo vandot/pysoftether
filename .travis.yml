@@ -1,4 +1,7 @@
 language: python
+
+install: true
+
 deploy:
   provider: pypi
   user: vandot
