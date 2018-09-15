@@ -1,0 +1,10 @@
+language: python
+deploy:
+  provider: pypi
+  user: vandot
+  password:
+    secure: mbzidS35t3c03n6dXFWgvxQFN+ZKoGocN7XBkAghyxL/lxUsdN9PH1SmOzp+EiNPAKA0wy5NzLGaJlpO7aPtce3GyCWaRBt1+Qr6eT6rf6QqHcj5hOPhmmqTMGKOcDtVvgKv0wv0DppO6dGbAoQYWNs973IpbmT9+3Zfgw/pKmub9lfuTcLbrFmVHIAk8STuL1RnI7S/Gyksl80bNnW13y16Zfy7SnJAjRTIvyyg0LaTYZUdOo/1vEH+6jBH4dJqIKmM+OWCDewT4AHj7lgfdcMMcT3vBnKY4/GkZUSqFg9cw//uD73MOeAYRDE+VIYBDJbe3/7azEMyOgAXja5SXOPflrKgJT+272TB9YV2k5rpzK1Ii9a2JA27XzblbgBtSLdYw1XQ32sH7yMm8SSM7iUG3fDYVUspxp9UPbrQqcF6rFjZeJbLgeRZaEQMfvL6UtRFYQuj961Oj19YDs0yt3LxyKmlRORuYyUi+JiwLpPHD3dD+g4iarQnwdH9kUcscCNPJF+xP/iXTzDd05Lhw5AP5ghdhVOM38T/T58wrsDsBSLTSSrM1KcDJ2h4uWhUIOFKIutwf4xVi+BbD5ptQrlGxhk4cvIS9gl+MOm6kZkXkbtCPQP+XYx1BpFvXSZ4NdeC1B/CNMkw64uinwAkfvkJXuG5E+tbtMqcfoFpWFY=
+  on:
+    distributions: sdist bdist_wheel
+    repo: vandot/pysoftether
+  skip_existing: true
