@@ -834,7 +834,7 @@ class SoftEtherAPI(object):
 
     def get_secure_nat_option(self, hub_name=None):
         payload = {
-            'HubName': ('string', [hub_name])
+            'RpcHubName': ('string', [hub_name])
         }
 
         return self.call_method('GetSecureNATOption', payload)
