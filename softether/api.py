@@ -118,7 +118,7 @@ class SoftEtherAPI(object):
     def authenticate(self, hub_name=None):
         auth_payload = {
             'method': ('string', ['admin']),
-            'client_str': ('string', ['SoftEtherPy']),
+            'client_str': ('string', ['pysoftether']),
             'client_ver': ('int', [1]),
             'client_build': ('int', [0]),
         }
