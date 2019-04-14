@@ -9,4 +9,3 @@ deploy:
   on:
     distributions: sdist bdist_wheel
     repo: vandot/pysoftether
-  skip_existing: true
