@@ -179,7 +179,10 @@ class SoftEtherAPI(object):
 
         data_length_as_int = SoftEtherProtocol(data_length).get_int()
 
-        response_buffer = os_socket.read(data_length_as_int)
+        response_buffer = b''
+
+        while len(response_buffer) < data_length_as_int:
+            response_buffer = response_buffer + os_socket.read(data_length_as_int - len(response_buffer))
 
         if len(response_buffer) != data_length_as_int:
             raise SoftEtherAPIException('api_call_wrong_response_length')
